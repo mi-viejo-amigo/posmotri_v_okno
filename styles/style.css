@@ -268,7 +268,6 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .content__card-link_current {
