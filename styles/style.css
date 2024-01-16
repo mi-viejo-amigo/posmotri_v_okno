@@ -10,7 +10,9 @@ html {
 
 .page {
   display: grid;
-  place-content: center center;
+
+  justify-content: center;
+  align-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -64,12 +66,13 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  max-inline-size: 711px;
 }
 
 .result__video-container {
   position: relative;
-  inline-size: 711px;
-  block-size: 386px;
+  max-inline-size: 711px;
+  max-block-size: 386px;
   margin-bottom: 16px;
 }
 
@@ -85,6 +88,7 @@ ol {
   grid-template-columns: 1fr 1fr 194px;
   justify-items: start;
   gap: 40px;
+  
 }
 
 .search-form__fieldset {
@@ -227,6 +231,7 @@ ol {
   text-transform: uppercase;
 }
 
+
 .content__accent {
   color: #545050;
 }
@@ -263,7 +268,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 3px;
 }
 
 .content__card-link_current {
